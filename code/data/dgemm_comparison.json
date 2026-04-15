@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "generated_by": "Lab 2 — ArmPL BLAS Performance Explorer",
+    "note": "Synthetic data — illustrative of real Neoverse V3 behavior. No published ArmPL vs MKL benchmark found in public corpus as of 2026-04-10. ArmPL throughput advantage inferred from SVE2 benefits.",
+    "hardware_assumed": {
+      "cpu": "neoverse-v3",
+      "isa_level": "armv9.2-a",
+      "peak_gflops": 2560,
+      "l1_cache_kb": 32,
+      "l2_cache_kb": 512,
+      "l3_cache_mb": 8,
+      "memory_bandwidth_gbps": 200
+    },
+    "methodology": "Cache-aware roofline model with hardware-specific penalties for L1/L2/L3/DRAM transitions"
+  },
+  "data": [
+    {
+      "matrix_size": 32,
+      "numpy_gflops": 2430.0,
+      "armpl_gflops": 2440.0
+    },
+    {
+      "matrix_size": 64,
+      "numpy_gflops": 2300.0,
+      "armpl_gflops": 2320.0
+    },
+    {
+      "matrix_size": 128,
+      "numpy_gflops": 1750.0,
+      "armpl_gflops": 1850.0
+    },
+    {
+      "matrix_size": 256,
+      "numpy_gflops": 1020.0,
+      "armpl_gflops": 1150.0
+    },
+    {
+      "matrix_size": 512,
+      "numpy_gflops": 410.0,
+      "armpl_gflops": 490.0
+    },
+    {
+      "matrix_size": 1024,
+      "numpy_gflops": 105.0,
+      "armpl_gflops": 130.0
+    },
+    {
+      "matrix_size": 2048,
+      "numpy_gflops": 28.0,
+      "armpl_gflops": 34.0
+    },
+    {
+      "matrix_size": 4096,
+      "numpy_gflops": 7.5,
+      "armpl_gflops": 9.2
+    }
+  ]
+}

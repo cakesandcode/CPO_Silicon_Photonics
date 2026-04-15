@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "generated_by": "Lab 2 — ArmPL BLAS Performance Explorer",
+    "note": "Synthetic FFT scaling data — illustrative. Shows typical scaling behavior for radix-2 and mixed-radix FFT on Neoverse V3.",
+    "hardware_assumed": {
+      "cpu": "neoverse-v3",
+      "peak_gflops": 2560
+    },
+    "methodology": "Cache-aware model with prime-factor decomposition benefits for mixed-radix"
+  },
+  "data": [
+    {
+      "fft_size": 1024,
+      "armpl_gflops": 1850.0,
+      "numpy_fft_gflops": 1650.0
+    },
+    {
+      "fft_size": 2048,
+      "armpl_gflops": 1720.0,
+      "numpy_fft_gflops": 1480.0
+    },
+    {
+      "fft_size": 4096,
+      "armpl_gflops": 1420.0,
+      "numpy_fft_gflops": 1180.0
+    },
+    {
+      "fft_size": 8192,
+      "armpl_gflops": 980.0,
+      "numpy_fft_gflops": 750.0
+    },
+    {
+      "fft_size": 16384,
+      "armpl_gflops": 520.0,
+      "numpy_fft_gflops": 380.0
+    },
+    {
+      "fft_size": 32768,
+      "armpl_gflops": 210.0,
+      "numpy_fft_gflops": 140.0
+    },
+    {
+      "fft_size": 65536,
+      "armpl_gflops": 85.0,
+      "numpy_fft_gflops": 55.0
+    },
+    {
+      "fft_size": 131072,
+      "armpl_gflops": 32.0,
+      "numpy_fft_gflops": 20.0
+    },
+    {
+      "fft_size": 262144,
+      "armpl_gflops": 12.0,
+      "numpy_fft_gflops": 8.0
+    },
+    {
+      "fft_size": 524288,
+      "armpl_gflops": 5.0,
+      "numpy_fft_gflops": 3.0
+    },
+    {
+      "fft_size": 1048576,
+      "armpl_gflops": 2.0,
+      "numpy_fft_gflops": 1.2
+    }
+  ]
+}

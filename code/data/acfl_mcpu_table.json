@@ -1,0 +1,68 @@
+[
+  {
+    "cpu": "Neoverse V3",
+    "mcpu_flag": "neoverse-v3",
+    "isa_level": "armv9.2-a",
+    "sve": true,
+    "sve2": true,
+    "sme": true,
+    "sme2": true,
+    "neon": true,
+    "notes": "128-bit SVE width, streaming SVE (SME2), highest performance tier, 192 cores/socket"
+  },
+  {
+    "cpu": "Neoverse V2",
+    "mcpu_flag": "neoverse-v2",
+    "isa_level": "armv9.1-a",
+    "sve": true,
+    "sve2": true,
+    "sme": false,
+    "sme2": false,
+    "neon": true,
+    "notes": "128-bit SVE width, no streaming mode (SME2), 128 cores/socket"
+  },
+  {
+    "cpu": "Neoverse N3",
+    "mcpu_flag": "neoverse-n3",
+    "isa_level": "armv9.2-a",
+    "sve": true,
+    "sve2": true,
+    "sme": false,
+    "sme2": false,
+    "neon": true,
+    "notes": "General-purpose, SVE2 support, no streaming mode, 128 cores/socket"
+  },
+  {
+    "cpu": "Neoverse N2",
+    "mcpu_flag": "neoverse-n2",
+    "isa_level": "armv9.0-a",
+    "sve": true,
+    "sve2": false,
+    "sme": false,
+    "sme2": false,
+    "neon": true,
+    "notes": "General-purpose, SVE only (not SVE2), 128 cores/socket"
+  },
+  {
+    "cpu": "Neoverse N1",
+    "mcpu_flag": "neoverse-n1",
+    "isa_level": "armv8.2-a",
+    "sve": false,
+    "sve2": false,
+    "sme": false,
+    "sme2": false,
+    "neon": true,
+    "notes": "General-purpose, NEON only, 64 cores/socket"
+  },
+  {
+    "cpu": "Cortex-A78",
+    "mcpu_flag": "cortex-a78",
+    "isa_level": "armv8.2-a",
+    "sve": false,
+    "sve2": false,
+    "sme": false,
+    "sme2": false,
+    "neon": true,
+    "notes": "Mobile/edge, NEON only, 8 cores/socket"
+  }
+]

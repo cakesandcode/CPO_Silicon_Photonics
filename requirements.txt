@@ -1,0 +1,36 @@
+# ARM SW Stack Series — Post 2 Lab Dependencies
+# Tested on: macOS (Apple Silicon + Intel), Linux x86_64
+# Python: 3.11+
+#
+# Install: pip install -r requirements.txt
+#
+# ARM QEMU / Neoverse hardware: same requirements.txt applies. See QEMU_SETUP.md for full guide.
+# On Neoverse, additionally install:
+#   - ACfL 25.x: https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Linux
+#   - ArmPL 25.x: https://developer.arm.com/Tools%20and%20Software/Arm%20Performance%20Libraries
+#   (Both free for use on Arm hardware)
+
+# Core numerical
+numpy>=1.26.4,<3.0
+
+# Data manipulation
+pandas>=2.2.0,<3.0
+
+# Interactive visualization (all labs)
+plotly>=5.18.0,<6.0
+
+# Jupyter Lab (run notebooks)
+jupyterlab>=4.1.0,<5.0
+
+# Notebook widgets (Lab 1 flag sandbox)
+ipywidgets>=8.1.0,<9.0
+
+# Notebook format validation
+nbformat>=5.9.0,<6.0
+
+# Testing
+pytest>=7.4.0,<9.0
+pytest-cov>=4.1.0,<6.0
+
+# Notebook cell execution for CI
+nbconvert>=7.11.0,<8.0

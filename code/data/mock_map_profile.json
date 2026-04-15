@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "tool": "Linaro Forge MAP 25.1.2",
+    "generated_by": "synthetic — illustrative of real MAP output structure",
+    "app": "hpl_benchmark",
+    "ranks": 8,
+    "runtime_s": 47.3,
+    "sampling_interval_note": "Sampling interval is hardware PMU-dependent; not user-configurable"
+  },
+  "time_breakdown": {
+    "cpu_pct": 71.2,
+    "mpi_pct": 22.4,
+    "io_pct": 4.1,
+    "thread_overhead_pct": 2.3
+  },
+  "hotspots": [
+    {
+      "function": "dgemm_",
+      "file": "hpl_dgemm.c",
+      "line": 142,
+      "cpu_pct": 34.5,
+      "mpi_pct": 0.1
+    },
+    {
+      "function": "MPI_Allreduce",
+      "file": "hpl_comm.c",
+      "line": 87,
+      "cpu_pct": 1.2,
+      "mpi_pct": 18.3
+    },
+    {
+      "function": "dtrsm_",
+      "file": "hpl_dtrsm.c",
+      "line": 201,
+      "cpu_pct": 18.7,
+      "mpi_pct": 0.3
+    },
+    {
+      "function": "MPI_Bcast",
+      "file": "hpl_comm.c",
+      "line": 105,
+      "cpu_pct": 0.8,
+      "mpi_pct": 3.2
+    },
+    {
+      "function": "dgetrf_",
+      "file": "hpl_dgetrf.c",
+      "line": 78,
+      "cpu_pct": 10.2,
+      "mpi_pct": 0.2
+    },
+    {
+      "function": "MPI_Reduce",
+      "file": "hpl_comm.c",
+      "line": 112,
+      "cpu_pct": 0.5,
+      "mpi_pct": 0.8
+    },
+    {
+      "function": "write_checkpoint",
+      "file": "hpl_io.c",
+      "line": 156,
+      "cpu_pct": 3.5,
+      "mpi_pct": 0.0
+    },
+    {
+      "function": "matrix_copy",
+      "file": "hpl_util.c",
+      "line": 243,
+      "cpu_pct": 2.3,
+      "mpi_pct": 0.0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Skills — personal publishing workflows, not open-sourced
+Skills/
+
+# Claude Code agents — personal workflow, not open-sourced
+.claude/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Reference docs — not for public repo
+ARM_Stack_Technical_Reference_2026.docx
+ARM_Stack_Post_Audit_2026-04-12.docx
+ARM_HPC_AI_Stack.pptx
+
+# Internal project management
+_MANIFEST.md
+
+# Self-referencing symlink
+ARM_SW_Stack

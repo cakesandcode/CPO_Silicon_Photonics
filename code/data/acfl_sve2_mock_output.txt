@@ -1,0 +1,45 @@
+================================================================================
+ACfL Vectorization Report
+Compiler: Arm Compiler 25.0
+Target: -mcpu=neoverse-v3
+Optimization level: -O3
+Date: 2026-04-10
+================================================================================
+
+Analyzing file: matrix_multiply.c
+
+Function: matrix_multiply_sve2
+  Loop at line 42 (column 5):
+    VECTORIZED as SVE2 vector (128-bit width)
+    Reason: Strided memory access pattern (stride=1), induction var recognized
+    Speedup estimate vs -O2: 3.2x (SVE2 auto-vectorization)
+    Loop trip count: 1024 iterations
+    Vectorization factor: 16 elements per iteration (128-bit SVE)
+
+  Loop at line 45 (column 7):
+    NOT VECTORIZED
+    Reason: Data dependency detected - loop-carried scalar dependency at iteration i
+    Blocking reason: Load from array[i] depends on store to array[i-1] from previous iteration
+    Suggestion: Use pragma omp simd or rewrite without loop-carried dependency
+
+Function: reduction_kernel
+  Loop at line 58 (column 3):
+    VECTORIZED as SVE2 vector (128-bit width)
+    Reason: Simple induction loop, no memory dependencies
+    Speedup estimate vs -O2: 2.8x
+    Loop trip count: 512 iterations
+    Vectorization factor: 8 elements per iteration
+
+Function summary:
+  Total loops analyzed: 3
+  Vectorized: 2
+  Not vectorized: 1
+  Overall estimated speedup: 3.0x vs -O2 baseline
+  Compiler used: armclang-25.0
+  Flags: -O3 -mcpu=neoverse-v3 -fvectorize
+  SVE detected: Yes (128-bit)
+  SME2 available: Yes (streaming mode)
+
+================================================================================
+End of report
+================================================================================

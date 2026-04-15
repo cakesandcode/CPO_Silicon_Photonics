@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" style="background:#0a0a0a; font-family: Arial, Helvetica, sans-serif;">
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1400" height="54" fill="#0a0a0a"/>
+  <text x="700" y="34" text-anchor="middle" fill="#00d4ff" font-size="22" font-weight="bold" letter-spacing="2">ARM PERFORMANCE, PRODUCTIVITY &amp; PROGRAMMING ENVIRONMENT — 2025/2026</text>
+  <line x1="60" y1="50" x2="1340" y2="50" stroke="#00d4ff" stroke-width="1.5"/>
+
+  <!-- ═══════════ LEFT COLUMN: PROGRAMMING DOMAINS ═══════════ -->
+
+  <!-- AI/ML Domain Label -->
+  <rect x="14" y="62" width="110" height="480" rx="6" fill="#3d1a6e" stroke="#7c3aed" stroke-width="1.5"/>
+  <text transform="translate(69,302) rotate(-90)" text-anchor="middle" fill="#c4b5fd" font-size="15" font-weight="bold">AI / ML PROGRAMMING</text>
+
+  <!-- HPC Domain Label -->
+  <rect x="14" y="556" width="110" height="192" rx="6" fill="#0e3040" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text transform="translate(69,652) rotate(-90)" text-anchor="middle" fill="#7dd3fc" font-size="15" font-weight="bold">HPC PROGRAMMING</text>
+
+  <!-- ═══════════ AI DATA LAYER ═══════════ -->
+  <rect x="136" y="62" width="168" height="480" rx="6" fill="#1e0f40" stroke="#7c3aed" stroke-width="1"/>
+  <text x="220" y="84" text-anchor="middle" fill="#c4b5fd" font-size="12" font-weight="bold">AI DATA</text>
+  <text x="220" y="106" text-anchor="middle" fill="#9ca3af" font-size="10.5">DVC · Apache Airflow</text>
+  <text x="220" y="122" text-anchor="middle" fill="#9ca3af" font-size="10.5">Apache Spark · MLflow</text>
+  <line x1="150" y1="132" x2="290" y2="132" stroke="#4c1d95" stroke-width="0.8"/>
+  <text x="220" y="152" text-anchor="middle" fill="#a78bfa" font-size="10.5" font-weight="bold">Arm AVH</text>
+  <text x="220" y="168" text-anchor="middle" fill="#7c3aed" font-size="9.5">developer.arm.com/avh</text>
+  <line x1="150" y1="178" x2="290" y2="178" stroke="#4c1d95" stroke-width="0.8"/>
+  <text x="220" y="198" text-anchor="middle" fill="#9ca3af" font-size="10">Cloud-native CI/CD</text>
+  <text x="220" y="214" text-anchor="middle" fill="#9ca3af" font-size="10">for Arm targets</text>
+
+  <!-- ═══════════ FRAMEWORK LAYER ═══════════ -->
+  <!-- TensorFlow block -->
+  <rect x="318" y="62" width="330" height="68" rx="5" fill="#1a2e1a" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="376" y="84" fill="#86efac" font-size="11" font-weight="bold">TensorFlow 2.x</text>
+  <text x="376" y="102" fill="#6ee7b7" font-size="10">KleidiAI kernel dispatch · ACL backend</text>
+  <text x="376" y="118" fill="#4ade80" font-size="9.5">XLA / oneDNN · SVE2-optimized ops</text>
+
+  <!-- PyTorch block -->
+  <rect x="660" y="62" width="382" height="68" rx="5" fill="#1a2a1a" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="718" y="84" fill="#86efac" font-size="11" font-weight="bold">PyTorch 2.9</text>
+  <text x="718" y="102" fill="#6ee7b7" font-size="10">torch.compile + SVE2/SME2 · TorchInductor backend</text>
+  <text x="718" y="118" fill="#4ade80" font-size="9.5">XNNPACK + KleidiAI dispatch · oneDNN / OpenBLAS optimized</text>
+
+  <!-- arrow between frameworks label -->
+  <text x="648" y="100" text-anchor="middle" fill="#374151" font-size="16">▶</text>
+
+  <!-- ═══════════ COMPUTE ACCELERATION LAYER ═══════════ -->
+  <!-- Row label -->
+  <text x="318" y="158" fill="#6b7280" font-size="9" font-style="italic">COMPUTE ACCELERATION</text>
+
+  <!-- ACL -->
+  <rect x="318" y="164" width="156" height="90" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="396" y="184" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="bold">Arm Compute Library</text>
+  <text x="396" y="200" text-anchor="middle" fill="#60a5fa" font-size="10">ACL v25.x · ML Primitives</text>
+  <text x="396" y="216" text-anchor="middle" fill="#9ca3af" font-size="9.5">Conv, BN, Pool, GEMM</text>
+  <text x="396" y="232" text-anchor="middle" fill="#9ca3af" font-size="9.5">CPU + GPU (Mali) · Neon/SVE2</text>
+  <text x="396" y="248" text-anchor="middle" fill="#6b7280" font-size="8.5">github.com/ARM-software/ComputeLibrary</text>
+
+  <!-- KleidiAI -->
+  <rect x="484" y="164" width="160" height="90" rx="4" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.8"/>
+  <text x="564" y="184" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="bold">KleidiAI</text>
+  <text x="564" y="200" text-anchor="middle" fill="#a78bfa" font-size="10">GEMM / SVE2 / SME2 Kernels</text>
+  <text x="564" y="216" text-anchor="middle" fill="#9ca3af" font-size="9.5">KRT · Quantized INT4/INT8</text>
+  <text x="564" y="232" text-anchor="middle" fill="#9ca3af" font-size="9.5">Up to 6× faster on SME2 hw</text>
+  <text x="564" y="248" text-anchor="middle" fill="#7c3aed" font-size="8.5">arm.com/kleidi</text>
+  <!-- SME2 badge -->
+  <rect x="596" y="158" width="44" height="14" rx="3" fill="#7c3aed"/>
+  <text x="618" y="169" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">NEW SME2</text>
+
+  <!-- ONNX Runtime -->
+  <rect x="654" y="164" width="196" height="90" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="752" y="184" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="bold">ONNX Runtime v1.20+</text>
+  <text x="752" y="200" text-anchor="middle" fill="#60a5fa" font-size="10">ACL Execution Provider (EP)</text>
+  <text x="752" y="216" text-anchor="middle" fill="#9ca3af" font-size="9.5">Graph optimization · operator fusion</text>
+  <text x="752" y="232" text-anchor="middle" fill="#ef4444" font-size="9" font-style="italic">ArmNN EP → DEPRECATED</text>
+  <text x="752" y="248" text-anchor="middle" fill="#9ca3af" font-size="9">Use ACL EP for new deployments</text>
+
+  <!-- Streamline -->
+  <rect x="860" y="164" width="182" height="90" rx="4" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="951" y="184" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="bold">Arm Perf. Studio</text>
+  <text x="951" y="200" text-anchor="middle" fill="#fbbf24" font-size="10">Streamline · Frame Advisor</text>
+  <text x="951" y="216" text-anchor="middle" fill="#9ca3af" font-size="9.5">PMU-level CPU/GPU profiling</text>
+  <text x="951" y="232" text-anchor="middle" fill="#9ca3af" font-size="9.5">KleidiAI + SME2 trace support</text>
+  <text x="951" y="248" text-anchor="middle" fill="#6b7280" font-size="8.5">developer.arm.com/streamline</text>
+
+  <!-- ═══════════ TRAINING INFRASTRUCTURE LAYER ═══════════ -->
+  <text x="318" y="278" fill="#6b7280" font-size="9" font-style="italic">DISTRIBUTED TRAINING</text>
+
+  <!-- ArmPL + MPI -->
+  <rect x="318" y="284" width="330" height="80" rx="4" fill="#0f1f2e" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="483" y="304" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">ArmPL 25.x + MPI</text>
+  <text x="483" y="322" text-anchor="middle" fill="#38bdf8" font-size="10">Parallel &amp; Distributed Training</text>
+  <text x="483" y="340" text-anchor="middle" fill="#9ca3af" font-size="9.5">OpenMPI · BLAS3 / ScaLAPACK · FFTW-compatible API</text>
+  <text x="483" y="356" text-anchor="middle" fill="#9ca3af" font-size="9.5">GCC 14 / LLVM 21.1 / NVHPC 25.11 · macOS + Windows support</text>
+
+  <!-- Experiment Tracking -->
+  <rect x="658" y="284" width="220" height="80" rx="4" fill="#0f1f2e" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="768" y="304" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">Experiment Tracking</text>
+  <text x="768" y="322" text-anchor="middle" fill="#38bdf8" font-size="10">MLflow · Weights &amp; Biases</text>
+  <text x="768" y="340" text-anchor="middle" fill="#9ca3af" font-size="9.5">Hyperparameter search · Model registry</text>
+  <text x="768" y="356" text-anchor="middle" fill="#9ca3af" font-size="9.5">Arm AVH integration for CI runs</text>
+
+  <!-- Arm ML Model Zoo -->
+  <rect x="888" y="284" width="154" height="80" rx="4" fill="#1e1230" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="965" y="304" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="bold">Arm ML Model Zoo</text>
+  <text x="965" y="322" text-anchor="middle" fill="#a78bfa" font-size="10">Pre-validated INT8/FP16</text>
+  <text x="965" y="340" text-anchor="middle" fill="#9ca3af" font-size="9.5">MobileNet, YOLO, BERT</text>
+  <text x="965" y="356" text-anchor="middle" fill="#9ca3af" font-size="9.5">benchmarked on Neoverse</text>
+
+  <!-- ═══════════ EDGE DEPLOYMENT LAYER ═══════════ -->
+  <text x="318" y="388" fill="#6b7280" font-size="9" font-style="italic">EDGE / ON-DEVICE DEPLOYMENT</text>
+
+  <!-- ExecuTorch -->
+  <rect x="318" y="394" width="380" height="80" rx="4" fill="#1a1020" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="508" y="416" text-anchor="middle" fill="#f9a8d4" font-size="11" font-weight="bold">ExecuTorch 1.0</text>
+  <text x="508" y="434" text-anchor="middle" fill="#f472b6" font-size="10">Arm Backend · SME2 via KleidiAI · XNNPACK</text>
+  <text x="508" y="452" text-anchor="middle" fill="#9ca3af" font-size="9.5">INT8: 1.83× · FP16: 3.9× speedup on SME2 hw</text>
+  <text x="508" y="468" text-anchor="middle" fill="#9ca3af" font-size="9.5">Llama 3.2, SqueezeSAM, Stable Audio on-device</text>
+
+  <!-- TFLite / Other runtimes -->
+  <rect x="708" y="394" width="334" height="80" rx="4" fill="#1a1020" stroke="#6b7280" stroke-width="1"/>
+  <text x="875" y="416" text-anchor="middle" fill="#d1d5db" font-size="11" font-weight="bold">TFLite / Other Runtimes</text>
+  <text x="875" y="434" text-anchor="middle" fill="#9ca3af" font-size="10">Arm delegate for TFLite · KleidiAI micro-kernels</text>
+  <text x="875" y="452" text-anchor="middle" fill="#9ca3af" font-size="9.5">llama.cpp + SME2 tracing via Streamline</text>
+  <text x="875" y="468" text-anchor="middle" fill="#9ca3af" font-size="9.5">Ethos-U NPU delegate (embedded targets)</text>
+
+  <!-- ═══════════ CLUSTER / RESOURCE MGMT ═══════════ -->
+  <rect x="136" y="554" width="906" height="38" rx="4" fill="#111827" stroke="#374151" stroke-width="1"/>
+  <text x="589" y="568" text-anchor="middle" fill="#9ca3af" font-size="10.5" font-weight="bold">CLUSTER SHARING &amp; RESOURCE MANAGEMENT</text>
+  <text x="589" y="583" text-anchor="middle" fill="#6b7280" font-size="10">Slurm · PBS / OpenPBS · Kubernetes (Arm-native nodes)</text>
+
+  <!-- ═══════════ HPC LAYER ═══════════ -->
+  <!-- ACfL -->
+  <rect x="136" y="604" width="286" height="78" rx="4" fill="#0a1929" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="279" y="624" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">Arm Compiler for Linux (ACfL 25.x)</text>
+  <text x="279" y="642" text-anchor="middle" fill="#38bdf8" font-size="10">C / C++ / Fortran</text>
+  <text x="279" y="658" text-anchor="middle" fill="#9ca3af" font-size="9.5">SVE / SVE2 auto-vectorization · SME2 offload</text>
+  <text x="279" y="674" text-anchor="middle" fill="#9ca3af" font-size="9.5">LTO · PGO · LLVM 18 base</text>
+
+  <!-- ArmPL HPC -->
+  <rect x="432" y="604" width="320" height="78" rx="4" fill="#0a1929" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="592" y="624" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">Arm Performance Libraries (ArmPL 25.x)</text>
+  <text x="592" y="642" text-anchor="middle" fill="#38bdf8" font-size="10">BLAS · LAPACK · FFT · Sparse · RNG · libamath</text>
+  <text x="592" y="658" text-anchor="middle" fill="#9ca3af" font-size="9.5">ScaLAPACK · Free download · Linux / macOS / Windows</text>
+  <text x="592" y="674" text-anchor="middle" fill="#9ca3af" font-size="9.5">FFTW-compatible API · GCC 14 / LLVM 21.1 tested</text>
+
+  <!-- Arm Forge -->
+  <rect x="762" y="604" width="280" height="78" rx="4" fill="#0a1929" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="902" y="624" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="bold">Arm Forge (DDT + MAP)</text>
+  <text x="902" y="642" text-anchor="middle" fill="#38bdf8" font-size="10">Parallel Debugger · Memory Debugger · Profiler</text>
+  <text x="902" y="658" text-anchor="middle" fill="#9ca3af" font-size="9.5">Neoverse V3 / N3 · Up to 128-core socket</text>
+  <text x="902" y="674" text-anchor="middle" fill="#9ca3af" font-size="9.5">MPI + OpenMP support · Remote debug</text>
+
+  <!-- ═══════════ SILICON: NEOVERSE ═══════════ -->
+  <rect x="1056" y="554" width="316" height="128" rx="6" fill="#0a1f0a" stroke="#22c55e" stroke-width="2"/>
+  <text x="1214" y="580" text-anchor="middle" fill="#86efac" font-size="16" font-weight="bold">Arm Neoverse</text>
+  <line x1="1076" y1="588" x2="1352" y2="588" stroke="#166534" stroke-width="0.8"/>
+
+  <text x="1214" y="608" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="bold">V3</text>
+  <text x="1214" y="624" text-anchor="middle" fill="#9ca3af" font-size="9.5">128-core · SME2 · PCIe Gen5</text>
+  <text x="1214" y="638" text-anchor="middle" fill="#9ca3af" font-size="9.5">CXL 3.0 · HBM3 · 84% AI uplift</text>
+  <text x="1214" y="652" text-anchor="middle" fill="#6b7280" font-size="8.5">First silicon: MS Cobalt 200</text>
+
+  <line x1="1076" y1="660" x2="1352" y2="660" stroke="#166534" stroke-width="0.8"/>
+  <text x="1214" y="678" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="bold">N3</text>
+  <text x="1214" y="693" text-anchor="middle" fill="#9ca3af" font-size="9.5">3× ML perf vs N2 · 20% perf/W</text>
+  <text x="1214" y="707" text-anchor="middle" fill="#9ca3af" font-size="9.5">40W TDP (32-core) · Cloud density</text>
+
+  <!-- ═══════════ LEGEND / ANNOTATIONS ═══════════ -->
+  <rect x="136" y="694" width="906" height="40" rx="4" fill="#0a0a0a" stroke="#1f2937" stroke-width="1"/>
+  <text x="150" y="710" fill="#6b7280" font-size="9" font-style="italic">LEGEND:</text>
+  <rect x="205" y="700" width="10" height="10" rx="2" fill="#7c3aed"/>
+  <text x="220" y="710" fill="#9ca3af" font-size="9">KleidiAI / SME2 (new)</text>
+  <rect x="340" y="700" width="10" height="10" rx="2" fill="#22c55e"/>
+  <text x="355" y="710" fill="#9ca3af" font-size="9">ML Frameworks</text>
+  <rect x="450" y="700" width="10" height="10" rx="2" fill="#3b82f6"/>
+  <text x="465" y="710" fill="#9ca3af" font-size="9">Compute / Runtime</text>
+  <rect x="580" y="700" width="10" height="10" rx="2" fill="#0ea5e9"/>
+  <text x="595" y="710" fill="#9ca3af" font-size="9">HPC Stack</text>
+  <rect x="665" y="700" width="10" height="10" rx="2" fill="#ef4444"/>
+  <text x="680" y="710" fill="#9ca3af" font-size="9">Deprecated</text>
+
+  <text x="150" y="727" fill="#6b7280" font-size="9" font-style="italic">CHANGES:</text>
+  <text x="220" y="727" fill="#ef4444" font-size="9">ArmNN EP deprecated (use ACL EP) ·</text>
+  <text x="430" y="727" fill="#a78bfa" font-size="9">SME2 added (V3/N3 silicon) ·</text>
+  <text x="580" y="727" fill="#86efac" font-size="9">Neoverse V2→V3, N2→N3 ·</text>
+  <text x="720" y="727" fill="#f9a8d4" font-size="9">ExecuTorch 1.0 stable ·</text>
+  <text x="840" y="727" fill="#fcd34d" font-size="9">PyTorch 2.9 SVE2/SME2</text>
+
+  <!-- Right sidebar: Source note -->
+  <text x="1080" y="710" fill="#4b5563" font-size="8.5">Sources: developer.arm.com · pytorch.org</text>
+  <text x="1080" y="724" fill="#4b5563" font-size="8.5">github.com/ARM-software · arm.com/kleidi</text>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="1396" height="816" rx="6" fill="none" stroke="#1f2937" stroke-width="2"/>
+
+</svg>
