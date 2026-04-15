@@ -59,10 +59,13 @@ def dBm_to_mW(power_dBm: float) -> float:
     Convert optical power from dBm to milliwatts.
 
     Args:
-        power_dBm: Optical power (dBm). Any finite float.
+        power_dBm: Optical power (dBm). Must be finite.
 
     Returns:
         Power in milliwatts (mW). Always positive.
+
+    Raises:
+        ValueError: if power_dBm is NaN or infinite.
 
     Example:
         >>> dBm_to_mW(0.0)
@@ -70,6 +73,8 @@ def dBm_to_mW(power_dBm: float) -> float:
         >>> dBm_to_mW(-3.0)  # approx 0.5 mW
         0.5011...
     """
+    if not math.isfinite(power_dBm):
+        raise ValueError(f"power_dBm must be finite, got {power_dBm}")
     return 10.0 ** (power_dBm / 10.0)
 
 
@@ -90,6 +95,10 @@ def mW_to_dBm(power_mW: float) -> float:
         >>> mW_to_dBm(1.0)
         0.0
     """
+    if not math.isfinite(power_mW):
+        raise ValueError(
+            f"power_mW must be finite, got {power_mW}."
+        )
     if power_mW <= 0:
         raise ValueError(
             f"power_mW must be > 0, got {power_mW}. "
@@ -319,10 +328,17 @@ def compute_budget_breakdown(
     Source: Component values from Research/topics/link-budget.md and
             Research/topics/optical-coupling.md.
     """
+    # Validate on-chip parameters via compute_on_chip_loss (reuses its range checks)
+    on_chip_total = compute_on_chip_loss(
+        coupler_loss_dB, waveguide_loss_dBcm, waveguide_length_cm,
+        modulator_il_dB, mux_demux_il_dB,
+    )
+    fiber_total = compute_fiber_loss(fiber_attenuation_dBkm, fiber_length_km)
+
+    # Decompose for waterfall chart — individual components from validated inputs
     coupling_total = 2.0 * coupler_loss_dB
     waveguide_total = waveguide_loss_dBcm * waveguide_length_cm
-    fiber_total = compute_fiber_loss(fiber_attenuation_dBkm, fiber_length_km)
-    total = coupling_total + waveguide_total + modulator_il_dB + mux_demux_il_dB + fiber_total
+    total = on_chip_total + fiber_total
 
     return {
         "Fiber-chip coupling (×2)": round(coupling_total, 4),

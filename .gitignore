@@ -4,3 +4,16 @@ Skills/
 
 # Claude Code agents — personal workflow, not open-sourced
 .claude/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Private docs — LinkedIn draft, source docx
+CPO_LinkedIn_Mobile.pdf
+silicon_photonics_architect_tutorial.docx
+DeepDiveStudyAids

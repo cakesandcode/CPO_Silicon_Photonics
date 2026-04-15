@@ -9,7 +9,6 @@ Run from project root:
     pytest code/tests/test_link_budget.py -v
 """
 
-import math
 import sys
 import os
 import pytest
